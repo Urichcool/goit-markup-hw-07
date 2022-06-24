@@ -111,7 +111,7 @@ p {
   color: var(--accent-color);
 }
 
-.page-header__alt-logo{
+.page-header__logo--color{
   color: var(--accent-color);
 }
 
@@ -149,7 +149,7 @@ p {
 
 
 
-.--current {
+.page-header-site-nav__link--current{
   position: relative;
   color: var(--accent-color);
   font-weight: 500;
@@ -162,7 +162,7 @@ p {
   padding-bottom: 34px;
 }
 
-.--current::after{
+.page-header-site-nav__link--current::after{
   position: absolute;
   content: "";
   left: 0;
@@ -606,7 +606,7 @@ border-color: var(--accent-color);
   margin-bottom: 20px;
 }
 
-.page-footer__alt-logo{
+.page-footer__logo--color{
   color: var(--accent-color);
 }
 

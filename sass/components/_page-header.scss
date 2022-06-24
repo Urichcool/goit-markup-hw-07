@@ -1,0 +1,92 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header-main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: 95px;
+
+  color: #000000;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  
+}
+}
+
+.page-header__logo--color{
+  color: $accent-color;
+}
+
+.page-header-site-nav {
+  display: flex;
+}
+
+.page-header-site-nav__item {
+  margin-right: 50px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.page-header-site-nav .page-header-site-nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+
+  color: $title-text-color;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+   transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.page-header-site-nav__link--current{
+  position: relative;
+  color: $accent-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px; 
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  &::after{
+    position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: $accent-color;
+  }
+}
