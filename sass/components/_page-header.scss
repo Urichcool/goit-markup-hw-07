@@ -26,7 +26,9 @@
   transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
-  
+  &--color{
+    color: $accent-color;
+  }
   &:hover,
   &:focus {
     color: $accent-color;
@@ -34,9 +36,7 @@
 }
 }
 
-.page-header__logo--color{
-  color: $accent-color;
-}
+
 
 .page-header-site-nav {
   display: flex;
@@ -65,6 +65,10 @@
    transition-property: color;
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .page-header-site-nav__link--current{
@@ -89,4 +93,46 @@ height: 4px;
 border-radius: 2px;
 background-color: $accent-color;
   }
+}
+
+.page-header-site-nav__contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.page-header-site-nav__icon{
+margin-right: 10px;
+fill: currentColor;
+}
+
+.page-header-site-nav-contacts__item{
+ color: #757575 ;
+}
+
+.page-header-site-nav-contacts__item {
+  margin-right: 50px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.page-header-site-nav__contacts .page-header-site-nav__link {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Roboto";
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  display: flex;
+   transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  &:hover,
+&:focus{
+color: $accent-color;
+}
 }
