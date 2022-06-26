@@ -88,16 +88,7 @@
   &:last-child{
     margin-bottom: 0;
   }
-  &:focus-within .modal-form__input,
-  &:hover .modal-form__input{
-    border: 1px solid $accent-color;
-  color: $accent-color;
-  }
-&:focus-within .modal-form__icon,
-&:hover .modal-form__icon{
-  fill: $accent-color;
-}
-  
+
 }
 
 .modal-form__label{
@@ -117,7 +108,11 @@ outline: none;
 transition-property: border-color ;   
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
- 
+ .modal-form__field:focus-within,
+ .modal-form__field:hover & {
+  border: 1px solid $accent-color;
+  color: $accent-color;
+ }
 }
 .modal-form__icon{
   color: #212121;
@@ -130,6 +125,10 @@ fill: currentColor;
 transition-property: fill ;   
   transition-duration: $transition-duration;
   transition-timing-function: $transition-timing-function;
+  .modal-form__field:focus-within,
+  .modal-form__field:hover & {
+  fill: $accent-color;
+ }
 }
 
 .modal-textarea__field{
