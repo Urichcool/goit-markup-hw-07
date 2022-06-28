@@ -429,6 +429,13 @@ body {
           justify-content: center;
 }
 
+.crew__link__item {
+  margin-right: 10px;
+}
+.crew__link__item:last-child {
+  margin-right: 0;
+}
+
 .crew__link {
   display: -webkit-box;
   display: -ms-flexbox;

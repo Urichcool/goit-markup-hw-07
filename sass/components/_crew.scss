@@ -59,6 +59,13 @@
 justify-content: center;
 }
 
+.crew__link__item{
+  margin-right: 10px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
 .crew__link{
   display: flex;
   color: $icon-color;
@@ -75,8 +82,7 @@ justify-content: center;
     background-color: $accent-color;
     color: $primary-white-color;
   }
-  
-  
+
 }
 
 .crew__icon{
@@ -85,3 +91,4 @@ justify-content: center;
   height: 20px;
 
 }
+
